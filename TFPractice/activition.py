@@ -15,14 +15,19 @@ def relu(inputs):
 	return y
 
 def tanh(inputs):
-	y = [(np.exp(x) - np.exp(-x) / float(np.exp(x)+ np.exp(-x))) for x in inputs]
+	y = [(np.exp(x) - np.exp(-x)) / float(np.exp(x)+ np.exp(-x)) for x in inputs]
 	return y
 
 def softplus(inputs):
 	y = [np.log(1 + np.exp(x)) for x in inputs]
 	return y
 
-# Y after tf's activation function
+# Test hand-made function:
+y_test = softplus(x)
+plt.plot(x, y_test)
+plt.show()
+
+# Use tensorflow's activation function
 y_sigmoid = tf.nn.sigmoid(x)
 y_relu = tf.nn.relu(x)
 y_tanh = tf.nn.tanh(x)
