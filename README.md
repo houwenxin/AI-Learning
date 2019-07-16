@@ -1,3 +1,2 @@
-# AIProjects
-Some toy projects and practice for AI programming.  
-Just for fun.  
+# AI-Projects
+Some toy projects and programming practice.  
