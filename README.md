@@ -1,2 +1,2 @@
-# AI-Projects
-Some toy projects and programming practice.  
+# AI-Learning
+Some toy projects and programming practice for learning record.  
